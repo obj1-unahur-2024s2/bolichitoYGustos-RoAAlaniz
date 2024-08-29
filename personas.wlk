@@ -1,3 +1,5 @@
+import objetos.*
+
 object rosa {
     method leGusta(cosa) = cosa.peso() <= 2000
 }

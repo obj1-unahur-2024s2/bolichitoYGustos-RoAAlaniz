@@ -1,3 +1,6 @@
+import personas.*
+
+
 //COLORES
 object rojo {
   method esFuerte() = true
