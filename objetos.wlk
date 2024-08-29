@@ -71,11 +71,11 @@ object muneco {
 }
 
 object placa {
-  var peso = 0
+  var pesoPlaca = 0
   var colorPlaca = celeste
   method color() = colorPlaca
   method material() = colorPlaca
-  method peso() = peso
+  method peso() = pesoPlaca
   method esDeColorFuerte() = self.color().esFuerte()
   method esDeMaterialQueBrilla() = self.material().esBrillante()
 }
