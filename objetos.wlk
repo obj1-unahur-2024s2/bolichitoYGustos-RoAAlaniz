@@ -10,9 +10,14 @@ object verde {
   method esFuerte() = true
 }
 
+object naranja {
+  method esFuerte() = true
+}
+
 object celeste {
   method esFuerte() = false
 }
+
 
 object pardo {
   method esFuerte() = false
@@ -83,3 +88,30 @@ object placa {
   method esDeMaterialQueBrilla() = self.material().esBrillante()
 }
 
+object arito {
+  method color() = celeste
+  method material() = cobre
+  method peso() = 180  
+  method esDeColorFuerte() = self.color().esFuerte()
+  method esDeMaterialQueBrilla()  = self.material().esBrillante()
+}
+
+object banquito {
+  var unColor = naranja
+  method color() = unColor
+  method material() = madera
+  method peso() = 1700 
+  method esDeColorFuerte() = self.color().esFuerte()
+  method esDeMaterialQueBrilla() = self.material().esBrillante()
+}
+
+object cajita {
+  var objetoAdentro = placa
+  method objetoAdentro() = objetoAdentro
+  method objetoAdentro(unObjeto) {objetoAdentro = unObjeto}
+  method peso() = 400 + objetoAdentro.peso()
+  method color() = rojo
+  method material() = cobre
+  method esDeMaterialQueBrilla() = self.material().esBrillante()
+  method esDeColorFuerte() = self.color().esFuerte()
+} 
