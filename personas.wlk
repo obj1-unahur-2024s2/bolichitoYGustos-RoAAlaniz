@@ -1,23 +1,15 @@
 object rosa {
-    method leGusta(cosa) {
-        return cosa.peso() <= 2000
-    }
+    method leGusta(cosa) = cosa.peso() <= 2000
 }
 
 object estefania {
-    method leGusta(cosa){
-        return cosa.esDeColorFuerte() 
-    }
+    method leGusta(cosa) = cosa.esDeColorFuerte() 
 }
 
 object luisa {
-    method leGusta(cosa) {
-        return cosa.esDeMaterialQueBrilla() 
-    }
+    method leGusta(cosa) = cosa.esDeMaterialQueBrilla() 
 }
 
 object juan {
-    method leGusta(cosa){
-        return not cosa.esDeColorFuerte() || cosa.peso().between(1200, 1800)
-    }
+    method leGusta(cosa) = not cosa.esDeColorFuerte() || cosa.peso().between(1200, 1800) 
 }
