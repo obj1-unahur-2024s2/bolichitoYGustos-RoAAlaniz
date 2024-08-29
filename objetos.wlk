@@ -70,17 +70,17 @@ object biblioteca {
 }
 
 object muneco {
-  var peso = 0
+  const unPeso = 0
   method color() = celeste
   method material() = vidrio
-  method peso() = peso
+  method peso() = unPeso
   method esDeColorFuerte() = self.color().esFuerte()
   method esDeMaterialQueBrilla() = self.material().esBrillante()
 }
 
 object placa {
-  var pesoPlaca = 0
-  var colorPlaca = celeste
+  const pesoPlaca = 0
+  const colorPlaca = celeste
   method color() = colorPlaca
   method material() = colorPlaca
   method peso() = pesoPlaca
@@ -97,7 +97,7 @@ object arito {
 }
 
 object banquito {
-  var unColor = naranja
+  const unColor = naranja
   method color() = unColor
   method material() = madera
   method peso() = 1700 
